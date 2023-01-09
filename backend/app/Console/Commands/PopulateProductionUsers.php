@@ -2,8 +2,8 @@
 
 namespace App\Console\Commands;
 
+use App\Models\User;
 use Illuminate\Console\Command;
-use Illuminate\Foundation\Auth\User;
 use Illuminate\Support\Facades\Hash;
 
 class PopulateProductionUsers extends Command

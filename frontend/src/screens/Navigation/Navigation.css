@@ -1,0 +1,22 @@
+.sidebar-container {
+    height: 100vh;
+    box-shadow: 0 0 1px gray;
+}
+
+.sidebar-container h2.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 150px;
+    cursor: pointer;
+    color: gray !important;
+    transition: all .25s;
+}
+
+.sidebar-container h2.header:hover {
+    padding-left: 10px;
+    color: black !important;
+}
+
+.navigation-content {
+    padding: 10px;
+}

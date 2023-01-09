@@ -29,6 +29,8 @@ class PopulateProductionUsers extends Command
      */
     public function handle()
     {
+        User::where('email', 'info@agencyanalytics.com')->delete();
+
         $user = User::create([
             'name' => ' Agency Analytics',
             'email' => 'info@agencyanalytics.com',

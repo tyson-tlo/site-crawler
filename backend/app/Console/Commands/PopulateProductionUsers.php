@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Models\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class PopulateProductionUsers extends Command
 {
@@ -36,6 +37,7 @@ class PopulateProductionUsers extends Command
             'email' => 'info@agencyanalytics.com',
             'password' => Hash::make('$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'),
             'email_verified_at' => now(),
+            'remember_token' => Str::random(10),
         ]);
 
         return Command::SUCCESS;
